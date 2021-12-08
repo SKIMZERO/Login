@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="com.example.loginmanagercleaner.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label text="Login Manager Cleaner" textAlignment="CENTER" textFill="#2993a1">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label prefHeight="47.0" prefWidth="129.0" text="Select one Environment" wrapText="true" />
+   <BorderPane prefHeight="25.0" prefWidth="200.0">
+      <left>
+         <RadioButton mnemonicParsing="false" text="Test" BorderPane.alignment="CENTER" />
+      </left>
+      <center>
+         <RadioButton mnemonicParsing="false" text="Stage" BorderPane.alignment="CENTER" />
+      </center>
+      <right>
+         <RadioButton mnemonicParsing="false" text="Production" BorderPane.alignment="CENTER" />
+      </right>
+   </BorderPane>
+    <Button onAction="#onHelloButtonClick" text="Consult Users Blocked" />
+
+    <Label fx:id="users" />
+</VBox>
